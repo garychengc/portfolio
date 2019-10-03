@@ -20,12 +20,12 @@ import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', source: full01, thumbnail: thumb01, caption: 'Project 1', description: 'Munch-Up'},
+    { id: '2', source: full02, thumbnail: thumb02, caption: 'Project 2', description: 'Scheduler'},
+    { id: '3', source: full03, thumbnail: thumb03, caption: 'Project 3', description: 'Twetter'},
+    { id: '4', source: full04, thumbnail: thumb04, caption: 'Project 4', description: 'TinyApp'},
+    { id: '5', source: full05, thumbnail: thumb05, caption: 'Project 5', description: 'Weather Forecast'},
+    { id: '6', source: full06, thumbnail: thumb06, caption: 'Project 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -45,13 +45,22 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Gary Chen<br />
-                            A Web Developer who is passionate about learning -- <i style={{fontSize: "22px"}}>technology, finance, engineering, weight-lifting, snowboarding</i> </h2>
+                            <div id="name">Gary Chen</div>
+                            <h2>A Web Developer who is passionate about learning -- <i id="learning">technology, finance, engineering, travelling, weight-lifting, snowboarding</i> </h2>
+                
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li>Eager to learn and develop new skills</li>
+                                <li>Never stop challenging myself</li>
+                                <li>Constantly looking for opportunities to grow</li>
+                                <li>Integrity; intelligent; initiative</li>
+                                <li>Innovative and creative</li>
+                                <li>Give back to the community</li>
+
+
+                            </ul>    
+                        </div>
                     </section>
 
                     <section id="two">
@@ -71,7 +80,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Contact Me</h2>
-                        <p id="contact-me-content">If you have any questions or would like to talk with me about my portfolio, feel free to send me an email.</p>
+                        <p id="contact-me-content">If you have any questions or would like to talk to me about my portfolio, feel free to send me an email.</p>
                         <div className="row">
                             {/* <div className="8u 12u$(small)">
                                 <form method="post" action="#">
@@ -89,7 +98,7 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-envelope-o" id="email-icon"><span className="label">Email</span></h3>
-                                        <a href="#">garychen.whc@gmail.com</a>
+                                        <a href="mailto:garychen.whc@gmail.com" target="_blank">garychen.whc@gmail.com</a>
                                     </li>
                                     <li>
                                         <h3 className="icon fa-home" id="address-icon"><span className="label">Address</span></h3>

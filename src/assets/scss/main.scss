@@ -122,7 +122,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+#name {
   color: _palette(fg-bold);
   font-weight: _font(weight-bold);
   line-height: 1em;
@@ -1051,9 +1052,39 @@ input[type='button'],
       border-top: 0;
       margin-top: 0;
       padding-top: 0;
-    }
-  }
+		}
+		> header {
+			> h2 {
+				margin-left: 5px
+			}
+		}
+
+		> div {
+			> ul {
+				margin-left: 15px;
+				font-size: 18px;
+
+				> li {
+					padding-bottom: 5px;
+				}
+			}
+
+
+		}
+	}
+
+	
+	#learning {
+		font-size: 23px;
+	}
+	#name {
+		font-size: 40px;
+		margin-bottom: 5px;
+	}
+
+
 }
+
 
 /* Poptrox */
 
@@ -1294,7 +1325,7 @@ body.is-touch {
     padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
       $size-header-pad;
     width: calc(100% - #{$size-header-width});
-  }
+	}
 }
 
 /* Medium */
@@ -1304,16 +1335,14 @@ body.is-touch {
 
   /* Basic */
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    br {
-      display: none;
-    }
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6 {
+
+  // }
 
   /* List */
 
@@ -1384,7 +1413,10 @@ body.is-touch {
     margin: 0;
     padding: ($size-header-pad * 1.5) $size-header-pad;
     width: 100%;
-  }
+	}
+	
+
+
 }
 
 /* Small */
@@ -1419,7 +1451,11 @@ body.is-touch {
     &.major {
       h2 {
         font-size: 1.35em;
-      }
+			}
+			
+			li {
+				font-size: 0.8em;
+			}
     }
   }
 
