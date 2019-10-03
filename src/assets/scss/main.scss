@@ -47,7 +47,7 @@
   )
 );
 
-$size-header-width: 35%;
+$size-header-width: 30%;
 $size-header-pad: 4em;
 
 html, body {
@@ -588,7 +588,8 @@ input[type='radio'] {
 
     img {
       border-radius: 100%;
-      width: 100%;
+			width: 100%;
+			height: 100%;
     }
   }
 }
@@ -985,6 +986,7 @@ input[type='button'],
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     width: 6.25em;
 	}
+	
 	
 	#about-me, #projects, #contact-me {
 		color: _palette(accent2, fg);
