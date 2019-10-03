@@ -981,40 +981,16 @@ input[type='button'],
   top: 0;
   width: $size-header-width;
 
-  // > * {
-  //   @include vendor('flex-shrink', '0');
-  //   width: 100%;
-  // }
-
-  // > .inner {
-  //   @include vendor('flex-grow', '1');
-  //   margin: 0 0 ($size-header-pad * 0.5) 0;
-  // }
-
-  // strong,
-  // b {
-  //   color: _palette(accent2, fg-bold);
-  // }
-
-  // h2,
-  // h3,
-  // h4,
-  // h5,
-  // h6 {
-  //   color: _palette(accent2, fg-bold);
-  // }
-
-  // h1 {
-  //   color: _palette(accent2, fg);
-  //   font-size: 1.35em;
-  //   line-height: 1.75em;
-  //   margin: 0;
-  // }
-
   .image.avatar {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     width: 6.25em;
-  }
+	}
+	
+	#about-me, #projects, #contact-me {
+		color: _palette(accent2, fg);
+		margin-top: 25px;
+		font-size: 22px;
+	}
 }
 
 /* Footer */
