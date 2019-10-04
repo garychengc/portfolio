@@ -5,25 +5,25 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
+import thumb01 from '../assets/images/thumbs/Munchup.jpg'
+import thumb02 from '../assets/images/thumbs/Scheduler.jpg'
+import thumb03 from '../assets/images/thumbs/Twetter.jpg'
+import thumb04 from '../assets/images/thumbs/TinyURL.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
+import full01 from '../assets/images/fulls/Munchup.jpg'
+import full02 from '../assets/images/fulls/Scheduler.jpg'
+import full03 from '../assets/images/fulls/Twetter.jpg'
+import full04 from '../assets/images/fulls/TinyURL.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Project 1', description: 'Munch-Up'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Project 2', description: 'Scheduler'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Project 3', description: 'Twetter'},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Project 4', description: 'TinyApp'},
+    { id: '1', source: full01, thumbnail: thumb01, caption: 'Food Ordering App', description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
+    { id: '2', source: full02, thumbnail: thumb02, caption: 'Interview Scheduler', description: 'An interviewr scheduler built with React and implementing WebSocket to provide two-way interactive communication between the users and server '},
+    { id: '3', source: full03, thumbnail: thumb03, caption: 'Twetter', description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
+    { id: '4', source: full04, thumbnail: thumb04, caption: 'TinyURL', description: 'TinyURL is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
     { id: '5', source: full05, thumbnail: thumb05, caption: 'Project 5', description: 'Weather Forecast'},
     { id: '6', source: full06, thumbnail: thumb06, caption: 'Project 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
@@ -52,9 +52,9 @@ class HomeIndex extends React.Component {
                         <div>
                             <ul>
                                 <li>Eager to learn and develop new skills</li>
-                                <li>Never stop challenging myself</li>
                                 <li>Constantly looking for opportunities to grow</li>
-                                <li>Integrity; intelligent; initiative</li>
+                                <li>Never stop challenging myself</li>
+                                <li>Integrity, intelligent, initiative</li>
                                 <li>Innovative and creative</li>
                                 <li>Give back to the community</li>
 
