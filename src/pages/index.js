@@ -12,17 +12,17 @@ import thumb04 from '../assets/images/thumbs/TinyURL.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/Munchup.jpg'
-import full02 from '../assets/images/fulls/Scheduler.jpg'
-import full03 from '../assets/images/fulls/Twetter.jpg'
-import full04 from '../assets/images/fulls/TinyURL.jpg'
+import full01 from '../assets/images/fulls/Munchup-Full.png'
+import full02 from '../assets/images/fulls/Scheduler-Full.png'
+import full03 from '../assets/images/fulls/Tweeter-Full.png'
+import full04 from '../assets/images/fulls/TinyURL-Full.png'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Food Ordering App', description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
     { id: '2', source: full02, thumbnail: thumb02, caption: 'Interview Scheduler', description: 'An interviewr scheduler built with React and implementing WebSocket to provide two-way interactive communication between the users and server '},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Twetter', description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
+    { id: '3', source: full03, thumbnail: thumb03, caption: 'Tweeter', description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
     { id: '4', source: full04, thumbnail: thumb04, caption: 'TinyURL', description: 'TinyURL is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
     { id: '5', source: full05, thumbnail: thumb05, caption: 'Project 5', description: 'Weather Forecast'},
     { id: '6', source: full06, thumbnail: thumb06, caption: 'Project 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
@@ -64,7 +64,7 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <h2>Recent Work</h2>
+                        <h2>My Projects</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
                             source,

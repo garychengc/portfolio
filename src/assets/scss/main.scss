@@ -986,11 +986,14 @@ input[type='button'],
   top: 0;
   width: $size-header-width;
 
-  .image.avatar {
-    margin: 0 0 (_size(element-margin) * 0.5) 0;
+
+  #logo {
+    height: 5.2em;
     width: 6em;
-    height: 6em
-	}
+    overflow: hidden;
+  }
+  
+
 	
 	
 	#about-me, #projects, #contact-me {
