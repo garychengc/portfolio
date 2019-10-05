@@ -544,6 +544,7 @@ input[type='radio'] {
     }
   }
 
+
   img {
     border-radius: _size(border-radius);
     display: block;
@@ -944,23 +945,26 @@ input[type='button'],
 
 .work-item {
   margin: 0 0 _size(element-margin) 0;
-  // height: 100%;
   height:400px;
   width: 50%;
+  padding-left: 45px;
 
   .image {
     margin: 0 0 (_size(element-margin) * 0.75) 0;
+    margin-bottom: 3px;
   }
 
   h3 {
-    font-size: 1em;
-    margin: 0 0 (_size(element-margin) * 0.25) 0;
+    font-size: 1.4em;
+    margin: 0;
+    padding-left: 5px;
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 15px;
     line-height: 1.5em;
     margin: 0;
+    padding-left: 8px;
   }
 }
 
@@ -993,8 +997,6 @@ input[type='button'],
     overflow: hidden;
   }
   
-
-	
 	
 	#about-me, #projects, #contact-me {
 		color: _palette(accent2, fg);

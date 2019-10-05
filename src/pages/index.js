@@ -12,20 +12,13 @@ import thumb04 from '../assets/images/thumbs/TinyURL.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/Munchup-Full.png'
-import full02 from '../assets/images/fulls/Scheduler-Full.png'
-import full03 from '../assets/images/fulls/Tweeter-Full.png'
-import full04 from '../assets/images/fulls/TinyURL-Full.png'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
-
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Food Ordering App', description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Interview Scheduler', description: 'An interviewr scheduler built with React and implementing WebSocket to provide two-way interactive communication between the users and server '},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Tweeter', description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'TinyURL', description: 'TinyURL is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Project 5', description: 'Weather Forecast'},
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Project 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', thumbnail: thumb01, caption: 'Food Ordering App', link: "https://github.com/garychengc/Munch-Up", description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
+    { id: '2', thumbnail: thumb02, caption: 'Interview Scheduler', link: "https://github.com/garychengc/scheduler", description: 'An interviewr scheduler built with React and WebSocket to provide two-way interactive communication between the users and server.'},
+    { id: '3', thumbnail: thumb03, caption: 'Tweeter', link: "https://github.com/garychengc/tweeter", description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
+    { id: '4', thumbnail: thumb04, caption: 'TinyURL', link:"https://github.com/garychengc/tinyapp", description: 'TinyURL is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
+    // { id: '5', thumbnail: thumb05, caption: 'Project 5', link: "https://github.com/garychengc/scheduler", description: 'Weather Forecast'},
+    // { id: '6', thumbnail: thumb06, caption: 'Project 6', link: "https://github.com/garychengc/scheduler", description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -54,8 +47,8 @@ class HomeIndex extends React.Component {
                                 <li>Eager to learn and develop new skills</li>
                                 <li>Constantly looking for opportunities to grow</li>
                                 <li>Never stop challenging myself</li>
-                                <li>Integrity, intelligent, initiative</li>
-                                <li>Innovative and creative</li>
+                                <li>Integrity, intelligence, initiative</li>
+                                <li>Innovative, creative, diligent</li>
                                 <li>Give back to the community</li>
 
 
@@ -66,34 +59,18 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>My Projects</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
-                            source,
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, thumbnail, caption, link, description }) => ({
                             thumbnail,
                             caption,
+                            link,
                             description
                         }))} />
-
-                        <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
                     </section>
 
                     <section id="three">
                         <h2>Contact Me</h2>
                         <p id="contact-me-content">If you have any questions or would like to talk to me about my portfolio, feel free to send me an email.</p>
                         <div className="row">
-                            {/* <div className="8u 12u$(small)">
-                                <form method="post" action="#">
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div> */}
                             <div className="4u 12u$(small)" id="contact-info">
                                 <ul className="labeled-icons">
                                     <li>
