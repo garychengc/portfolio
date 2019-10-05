@@ -7,10 +7,10 @@ import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/Munchup.jpg'
 import thumb02 from '../assets/images/thumbs/Scheduler.jpg'
-import thumb03 from '../assets/images/thumbs/Twetter.jpg'
+import thumb03 from '../assets/images/thumbs/Tweeter.jpg'
 import thumb04 from '../assets/images/thumbs/TinyURL.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
+// import thumb05 from '../assets/images/thumbs/05.jpg'
+// import thumb06 from '../assets/images/thumbs/06.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', thumbnail: thumb01, caption: 'Food Ordering App', link: "https://github.com/garychengc/Munch-Up", description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
