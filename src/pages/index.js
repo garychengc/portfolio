@@ -36,7 +36,7 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
-                    <section id="one">
+                    <section id="introduction-section">
                         <header className="major">
                             <div id="name">Gary Chen</div>
                             <h2>A Web Developer who is passionate about learning<br/><i id="learning">-- technology, finance, engineering, travelling, weight-lifting, snowboarding</i> </h2>
@@ -56,7 +56,7 @@ class HomeIndex extends React.Component {
                         </div>
                     </section>
 
-                    <section id="two">
+                    <section id="project-section">
                         <h2>My Projects</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, thumbnail, caption, link, description }) => ({
@@ -67,7 +67,7 @@ class HomeIndex extends React.Component {
                         }))} />
                     </section>
 
-                    <section id="three">
+                    <section id="contact-section">
                         <h2>Contact Me</h2>
                         <p id="contact-me-content">If you have any questions or would like to talk to me about my portfolio, feel free to send me an email.</p>
                         <div className="row">

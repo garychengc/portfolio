@@ -645,7 +645,7 @@ ul {
 
       .icon {
         &:before {
-          font-size: 1.5em;
+          font-size: 25px;
         }
       }
     }
@@ -1041,6 +1041,10 @@ input[type='button'],
   }
 }
 
+#about-me, #projects, #contact-me {
+  cursor: pointer;
+}
+
 /* Main */
 
 #main {
@@ -1053,7 +1057,7 @@ input[type='button'],
   > section {
     border-top: solid 2px _palette(border);
     margin: $size-header-pad 0 0 0;
-    padding: $size-header-pad 0 0 0;
+    padding: $size-header-pad*0.5 0 0 0;
 
     &:first-child {
       border-top: 0;
@@ -1326,6 +1330,7 @@ body.is-touch {
   }
 }
 
+
 /* Large */
 
 @include breakpoint(large) {
@@ -1383,15 +1388,6 @@ body.is-touch {
 
   /* Basic */
 
-  // h1,
-  // h2,
-  // h3,
-  // h4,
-  // h5,
-  // h6 {
-
-  // }
-
   /* List */
 
   ul {
@@ -1440,18 +1436,6 @@ body.is-touch {
 
     .icons {
       margin: 0 0 (_size(element-margin) * 0.5) 0;
-    }
-
-    .copyright {
-      margin: 0 0 (_size(element-margin) * 0.5) 0;
-
-      li {
-        border-left-width: 1px;
-        display: inline-block;
-        line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
-      }
     }
   }
 
