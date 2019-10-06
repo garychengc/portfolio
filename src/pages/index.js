@@ -39,7 +39,7 @@ class HomeIndex extends React.Component {
                     <section id="one">
                         <header className="major">
                             <div id="name">Gary Chen</div>
-                            <h2>A Web Developer who is passionate about learning -- <i id="learning">technology, finance, engineering, travelling, weight-lifting, snowboarding</i> </h2>
+                            <h2>A Web Developer who is passionate about learning<br/><i id="learning">-- technology, finance, engineering, travelling, weight-lifting, snowboarding</i> </h2>
                 
                         </header>
                         <div>
