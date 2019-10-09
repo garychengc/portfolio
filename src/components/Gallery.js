@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Carousel, { Modal, ModalGateway } from "react-images";
 
 class Gallery extends Component {
     renderGallery (images) {

@@ -73,7 +73,6 @@ body {
 }
 
 body,
-input,
 select,
 textarea {
   color: _palette(fg);
@@ -289,31 +288,6 @@ label {
   margin: 0 0 (_size(element-margin) * 0.5) 0;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-select,
-textarea {
-  @include vendor('appearance', 'none');
-  background: _palette(border-bg);
-  border-radius: _size(border-radius);
-  border: solid 2px transparent;
-  color: inherit;
-  display: block;
-  outline: 0;
-  padding: 0 0.75em;
-  text-decoration: none;
-  width: 100%;
-
-  &:invalid {
-    box-shadow: none;
-  }
-
-  &:focus {
-    border-color: _palette(accent1, bg);
-  }
-}
-
 .select-wrapper {
   @include icon;
   display: block;
@@ -336,111 +310,6 @@ textarea {
   select::-ms-expand {
     display: none;
   }
-}
-
-input[type='text'],
-input[type='password'],
-input[type='email'],
-select {
-  height: _size(element-height);
-}
-
-textarea {
-  padding: 0.75em;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  @include vendor('appearance', 'none');
-  display: block;
-  float: left;
-  margin-right: -2em;
-  opacity: 0;
-  width: 1em;
-  z-index: -1;
-
-  & + label {
-    @include icon;
-    color: _palette(fg);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: _font(weight);
-    padding-left: (_size(element-height) * 0.6) + 0.75em;
-    padding-right: 0.75em;
-    position: relative;
-
-    &:before {
-      background: _palette(border-bg);
-      border-radius: _size(border-radius);
-      border: solid 2px transparent;
-      content: '';
-      display: inline-block;
-      height: (_size(element-height) * 0.6);
-      left: 0;
-      line-height: (_size(element-height) * 0.575);
-      position: absolute;
-      text-align: center;
-      top: 0;
-      width: (_size(element-height) * 0.6);
-    }
-  }
-
-  &:checked + label {
-    &:before {
-      background: _palette(fg-bold);
-      border-color: _palette(fg-bold);
-      color: _palette(bg);
-      content: '\f00c';
-    }
-  }
-
-  &:focus + label {
-    &:before {
-      border-color: _palette(accent1, bg);
-    }
-  }
-}
-
-input[type='checkbox'] {
-  & + label {
-    &:before {
-      border-radius: _size(border-radius);
-    }
-  }
-}
-
-input[type='radio'] {
-  & + label {
-    &:before {
-      border-radius: 100%;
-    }
-  }
-}
-
-::-webkit-input-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1;
-}
-
-:-moz-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1;
-}
-
-.formerize-placeholder {
-  color: _palette(fg-light) !important;
-  opacity: 1;
 }
 
 /* Box */
@@ -848,97 +717,6 @@ table {
     }
   }
 }
-
-/* Button */
-
-input[type='submit'],
-input[type='reset'],
-input[type='button'],
-.button {
-  @include vendor('appearance', 'none');
-  @include vendor(
-    'transition',
-    (
-      'background-color #{_duration(transition)} ease-in-out',
-      'color #{_duration(transition)} ease-in-out',
-      'border-color #{_duration(transition)} ease-in-out'
-    )
-  );
-  background-color: transparent;
-  border-radius: _size(border-radius);
-  border: solid 3px _palette(border);
-  color: _palette(fg-bold) !important;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: _font(weight-bold);
-  height: 3.15em;
-  height: calc(2.75em + 6px);
-  line-height: 2.75em;
-  min-width: 10em;
-  padding: 0 1.5em;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-
-  &:hover {
-    border-color: _palette(accent1, bg);
-    color: _palette(accent1, bg) !important;
-  }
-
-  &:active {
-    background-color: transparentize(_palette(accent1, bg), 0.9);
-    border-color: _palette(accent1, bg);
-    color: _palette(accent1, bg) !important;
-  }
-
-  &.icon {
-    padding-left: 1.35em;
-
-    &:before {
-      margin-right: 0.5em;
-    }
-  }
-
-  &.fit {
-    display: block;
-    margin: 0 0 (_size(element-margin) * 0.5) 0;
-    min-width: 0;
-    width: 100%;
-  }
-
-  &.small {
-    font-size: 0.8em;
-  }
-
-  &.big {
-    font-size: 1.35em;
-  }
-
-  &.special {
-    background-color: _palette(accent1, bg);
-    border-color: _palette(accent1, bg);
-    color: _palette(accent1, fg-bold) !important;
-
-    &:hover {
-      background-color: lighten(_palette(accent1, bg), 5);
-      border-color: lighten(_palette(accent1, bg), 5);
-    }
-
-    &:active {
-      background-color: darken(_palette(accent1, bg), 5);
-      border-color: darken(_palette(accent1, bg), 5);
-    }
-  }
-
-  &.disabled,
-  &:disabled {
-    background-color: _palette(border2-bg) !important;
-    border-color: _palette(border2-bg) !important;
-    color: _palette(fg-light) !important;
-    cursor: default;
-  }
-}
-
 /* Work Item */
 
 .work-item {
@@ -976,9 +754,9 @@ input[type='button'],
   background-color: _palette(accent2, bg);
   background-attachment: scroll, fixed;
   background-image: url('images/overlay.png'), url('../images/bg.jpg');
-  background-position: top left, top left;
+  background-position: left;
   background-repeat: repeat, no-repeat;
-  background-size: auto, auto 100%;
+  background-size: contain;
   color: _palette(accent2, fg);
   height: 100%;
   left: 0;
@@ -1000,6 +778,31 @@ input[type='button'],
     color: _palette(accent2, fg);
     margin-top: 25px;
     font-size: 22px;
+    font-weight: 500;
+  }
+
+  #about-me {
+    &:hover {
+      font-size: 115%;
+      color: black;
+      font-weight: 800;
+    }
+  }
+
+  #projects {
+    &:hover {
+      font-size: 115%;
+      color: black;
+      font-weight: 800;
+    }
+  }
+
+  #contact-me {
+    &:hover {
+      font-size: 115%;
+      color: black;
+      font-weight: 800;
+    }
   }
 }
 
@@ -1041,7 +844,9 @@ input[type='button'],
   }
 }
 
-#about-me, #projects, #contact-me {
+#about-me,
+#projects,
+#contact-me {
   cursor: pointer;
 }
 
@@ -1057,7 +862,7 @@ input[type='button'],
   > section {
     border-top: solid 2px _palette(border);
     margin: $size-header-pad 0 0 0;
-    padding: $size-header-pad*0.5 0 0 0;
+    padding: $size-header-pad * 0.5 0 0 0;
 
     &:first-child {
       border-top: 0;
@@ -1329,7 +1134,6 @@ body.is-touch {
     margin-bottom: 200px;
   }
 }
-
 
 /* Large */
 

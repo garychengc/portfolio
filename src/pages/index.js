@@ -15,8 +15,8 @@ import thumb04 from '../assets/images/thumbs/TinyURL.jpg'
 const DEFAULT_IMAGES = [
     { id: '1', thumbnail: thumb01, caption: 'Food Ordering App', link: "https://github.com/garychengc/Munch-Up", description: "A full stack web application for food ordering built with JavaScript, Express, jQuery, and PostgreSQL. Implemented Google map, Google pay, Twilio APIs."},
     { id: '2', thumbnail: thumb02, caption: 'Interview Scheduler', link: "https://github.com/garychengc/scheduler", description: 'An interviewr scheduler built with React and WebSocket to provide two-way interactive communication between the users and server.'},
-    { id: '3', thumbnail: thumb03, caption: 'Tweeter', link: "https://github.com/garychengc/tweeter", description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
-    { id: '4', thumbnail: thumb04, caption: 'TinyURL', link:"https://github.com/garychengc/tinyapp", description: 'TinyURL is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
+    { id: '3', thumbnail: thumb03, caption: 'Tweeter', link: "https://garytweeter.herokuapp.com", description: "Tweeter is a simple, single-page Twitter clone. The app is built upon the utilizations of HTML, CSS, Sass, JS, jQuery and AJAX front-end skills, and the Node, Express back-end skills."},
+    { id: '4', thumbnail: thumb04, caption: 'Pocket-Link', link:"https://garytinyurl.herokuapp.com/urls", description: 'Pocket-Link is a full stack web application built with Node and Express that allows users to shorten long URLs, which can be implemented to improve work efficiency and productivity.'},
     // { id: '5', thumbnail: thumb05, caption: 'Project 5', link: "https://github.com/garychengc/scheduler", description: 'Weather Forecast'},
     // { id: '6', thumbnail: thumb06, caption: 'Project 6', link: "https://github.com/garychengc/scheduler", description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
