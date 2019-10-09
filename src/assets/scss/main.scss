@@ -459,8 +459,11 @@ label {
     img {
       border-radius: 100%;
       width: 100%;
+      height: 100%;
+
     }
   }
+
 }
 
 /* List */
@@ -767,7 +770,7 @@ table {
   width: $size-header-width;
 
   #logo {
-    height: 5.2em;
+    height: 6em;
     width: 6em;
     overflow: hidden;
   }
@@ -895,7 +898,6 @@ table {
     font-size: 42px;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    // border-bottom: 2px solid #666666;
     width: 30%;
   }
 }
@@ -1281,6 +1283,7 @@ body.is-touch {
   }
 
   header {
+    
     &.major {
       h2 {
         font-size: 1.35em;
@@ -1289,6 +1292,10 @@ body.is-touch {
       li {
         font-size: 0.8em;
       }
+    }
+
+    #name {
+      font-size: 20px;
     }
   }
 
@@ -1396,7 +1403,9 @@ body.is-touch {
   /* Header */
 
   #header {
-    padding: ($size-header-pad * 3) $size-header-pad;
+    // padding: ($size-header-pad * 3) $size-header-pad;
+    padding-top: 20px;
+    padding-bottom: 10px;
 
     h1 {
       br {
@@ -1405,6 +1414,9 @@ body.is-touch {
     }
   }
 
+  #name {
+    font-size: 30px;
+  }
   /* Footer */
 
   #footer {
@@ -1421,12 +1433,24 @@ body.is-touch {
 }
 
 @media screen and (max-width: 480px) {
-  .\36 u,
-  .\36 u24,
-  .\38 u,
-  .\38 u24,
-  .\34 u,
-  .\34 u24 {
-    width: 100%;
+  #main {
+    #name {
+      font-size: 2em;
+      width: 100%;
+    }
+
+    section {
+      header {
+        h2 {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  .work-item {
+    p {
+      font-size: 20px;
+    }
   }
 }
